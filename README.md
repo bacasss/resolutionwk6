@@ -32,3 +32,5 @@ closing it and reopening will not reset the list as the data is persisted locall
 more technical descriptions:
 
 the main window has a title and a set size (500x400). i used 5 widget types: label, entry, button, listbox and scrollbar. everything is laid out with grid(), and there are 3 frames (main_frame, input_frame and listbox_frame) to group the widgets. the add task, complete/incomplete and delete task buttons each use command= to call their own function. messageboxes: a warning if the task is empty, an error if nothing is selected, and a yes/no confirmation before deleting. tasks are saved to tasks.json with load_tasks() and save_task(), same pattern as week 1. columnconfigure/rowconfigure with weight and sticky make the layout stretch when you resize the window. the 2 extras are the priority label and the enter keybind.
+
+update: fixed code and update github + testpypi where after pipinstall there was a nameerror when you clicked any button
