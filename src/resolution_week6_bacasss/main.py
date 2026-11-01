@@ -75,6 +75,7 @@ def on_enter(event):
     add_task()
 
 def main():
+    global tasks, entry, priority_entry, listbox
     tasks = load_tasks()
     root = tk.Tk()
     root.title("to do listtttttt")
